@@ -19,7 +19,7 @@ logger = logging.getLogger(__name__)
 
 class FixerIOCurrencyProvider(ApiKeyCurrencyProvider):
     BASE_URL = 'https://api.apilayer.com/fixer'
-    API_URL = 'api/latest'
+    API_URL = '/api/latest'
 
     def _validate_data(self, data: Any) -> Tuple[str, Dict]:
         if not isinstance(data, dict):
