@@ -59,7 +59,7 @@ class CurrencyProvider(ABC):
         # a mitm xml bomb on your head
         # and no I won't install extra dependencies for your stupidity
         if validate_uri and not re.match(r'^https:\/\/', request.full_url):
-        raise Exception('Invalid request url: {}'.format(request.full_url))
+            raise Exception('Invalid request url: {}'.format(request.full_url))
         return request
 
     @abstractmethod
