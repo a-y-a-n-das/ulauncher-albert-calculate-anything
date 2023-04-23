@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 
 
 class FixerIOCurrencyProvider(ApiKeyCurrencyProvider):
-    BASE_URL = 'http://api.apilayer.com/fixer'
+    BASE_URL = 'https://api.apilayer.com/fixer'
     API_URL = '/latest'
 
     def _validate_data(self, data: Any) -> Tuple[str, Dict]:
